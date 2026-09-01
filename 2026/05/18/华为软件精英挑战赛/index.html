@@ -1,0 +1,512 @@
+  <!DOCTYPE html>
+  <html lang="zh-CN"  
+      data-theme-mode="auto"
+  >
+  <head>
+  <meta charset="utf-8">
+  
+  
+  
+  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_4k4bc36ef96';window.REIMU_CONFIG.clipboard_tips = {"success":{"zh-CN":"复制成功 (*^▽^*)"},"fail":{"zh-CN":"复制失败 (ﾟ⊿ﾟ)ﾂ"},"copyright":{"enable":false,"count":50,"license_type":"by-nc-sa"}};window.REIMU_CONFIG.clipboard_tips.copyright.content = '本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！';window.REIMU_CONFIG.code_block = {"expand":true};window.REIMU_CONFIG.base = 'https://sanae1116.github.io';</script>
+  <title>
+    华为软件精英挑战赛过程总结 | Sanae&#39;s Space
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic|Noto Serif SC:400,400italic,700,700italic&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic|Noto Serif SC:400,400italic,700,700italic&display=swap" media="print" onload="this.media='all'">
+    <link rel="preload" href="//at.alicdn.com/t/c/font_4552607_4k4bc36ef96.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    
+<link rel="stylesheet" href="/css/loader.css">
+
+    <meta name="description" content="0.前言打这个比赛纯纯是打着玩，想拿华为手环，之前也听说过这个比赛，看过B站的一些视频，感觉赛题还是比较有意思，不是那种传统OI，ACM那些题目，所以就报名了。还有个想法就是测试一下agent到底什么水平，于是乎报名参赛。 1.比赛流程整个比赛的周期还是比较长的，接近两个月吧，虽然有点我做题都有点断断续续，并且全程都是AI。整个过程有初赛、复赛、决赛，每个又有训练赛和正式赛，题目在训练赛与正式赛期">
+<meta property="og:type" content="article">
+<meta property="og:title" content="华为软件精英挑战赛过程总结">
+<meta property="og:url" content="https://sanae1116.github.io/2026/05/18/%E5%8D%8E%E4%B8%BA%E8%BD%AF%E4%BB%B6%E7%B2%BE%E8%8B%B1%E6%8C%91%E6%88%98%E8%B5%9B/index.html">
+<meta property="og:site_name" content="Sanae&#39;s Space">
+<meta property="og:description" content="0.前言打这个比赛纯纯是打着玩，想拿华为手环，之前也听说过这个比赛，看过B站的一些视频，感觉赛题还是比较有意思，不是那种传统OI，ACM那些题目，所以就报名了。还有个想法就是测试一下agent到底什么水平，于是乎报名参赛。 1.比赛流程整个比赛的周期还是比较长的，接近两个月吧，虽然有点我做题都有点断断续续，并且全程都是AI。整个过程有初赛、复赛、决赛，每个又有训练赛和正式赛，题目在训练赛与正式赛期">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-05-18T11:25:31.196Z">
+<meta property="article:modified_time" content="2026-09-01T03:18:52.631Z">
+<meta property="article:author" content="Sanae">
+<meta name="twitter:card" content="summary">
+    <link rel="alternate" href="/atom.xml" title="Sanae's Space" type="application/atom+xml">
+    <link rel="shortcut icon" href="/images/favicon.jpg">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css" integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei+Zx/1oA/0l8ysE" crossorigin="anonymous">
+    
+<script src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js" integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script>
+
+    
+<link rel="stylesheet" href="https://npm.webcache.cn/@reimujs/aos@0.1.2/dist/aos.css" integrity="sha384-GMRP93c6Hkz9JVKGAuRR3nTS7M07RwPgTFenXiosjq2VbVgvdDNcz1g6Mkj8AONa" crossorigin="anonymous">
+
+<meta name="generator" content="Hexo 8.1.1"></head>
+
+  <body>
+      <div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi rotate">
+          <svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+           M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg>
+      </div>
+      <div class="loading-word">少女祈祷中...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var loaderEl = document.getElementById('loader');
+    var startLoading = () => {
+      time = Date.now();
+      loaderEl.classList.remove("loading");
+    }
+    var hideLoader = () => {
+      document.body.style.overflow = 'auto';
+      loader.classList.add('loading');
+    };
+
+    var endLoading = () => {
+      if (!time) {
+        hideLoader();
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          hideLoader();
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    loaderEl.addEventListener('click', endLoading);
+  </script>
+<div id="copy-tooltip"></div>
+<div id="heatmap-tooltip"></div>
+
+
+    <div id="container">
+      <div id="wrap">
+        <div id="header-nav">
+  <nav id="main-nav" aria-label="Primary navigation">
+        <a class="main-nav-link-wrap" href="/">
+            <div class="main-nav-icon icon rotate">
+                &#xe62b;
+            </div>
+          <span class="main-nav-link">首页</span>
+        </span>
+        <a class="main-nav-link-wrap" href="/archives">
+            <div class="main-nav-icon icon rotate">
+                &#xe62b;
+            </div>
+          <span class="main-nav-link">归档</span>
+        </span>
+        <a class="main-nav-link-wrap" href="/about">
+            <div class="main-nav-icon icon rotate">
+                &#xe62b;
+            </div>
+          <span class="main-nav-link">关于</span>
+        </span>
+        <a class="main-nav-link-wrap" href="/friend">
+            <div class="main-nav-icon icon rotate">
+                &#xe62b;
+            </div>
+          <span class="main-nav-link">友链</span>
+        </span>
+    <a id="main-nav-toggle" class="nav-icon" aria-label="Toggle navigation" role="button"></a>
+  </nav>
+  <nav id="sub-nav" aria-label="Secondary navigation">
+      <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅" aria-label="RSS 订阅" target="_blank"></a>
+  </nav>
+</div>
+<header id="header" aria-label="Site header">
+        <picture>
+        </picture>
+          <img  fetchpriority="high" src="/images/bg1.webp" alt="华为软件精英挑战赛过程总结">
+  <div id="header-outer">
+    <div id="header-title">
+          <span id="logo">
+            <h1 data-aos="slide-up">华为软件精英挑战赛过程总结</h1>
+          </span>
+        <h2 id="subtitle-wrap" data-aos="slide-down">
+        </h2>
+    </div>
+  </div>
+</header>
+
+        <div id="content" aria-label="Page content"  class="sidebar-right" >
+          <aside id="sidebar" aria-label="Sidebar">
+  <div class="sidebar-wrapper-container sticky">
+  <div class="sidebar-wrapper">
+    <div class="sidebar-wrap" data-aos="fade-up">
+          <div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
+<div class="sidebar-toc-wrapper toc-div-class" >
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#0-%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">0.前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E6%AF%94%E8%B5%9B%E6%B5%81%E7%A8%8B"><span class="toc-number">2.</span> <span class="toc-text">1.比赛流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%88%9D%E8%B5%9B"><span class="toc-number">3.</span> <span class="toc-text">2.初赛</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%A4%8D%E8%B5%9B"><span class="toc-number">4.</span> <span class="toc-text">3.复赛</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%86%B3%E8%B5%9B"><span class="toc-number">5.</span> <span class="toc-text">4.决赛</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E5%86%B3%E8%B5%9B%E6%AD%A3%E5%BC%8F%E8%B5%9B"><span class="toc-number">6.</span> <span class="toc-text">5.决赛正式赛</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#day0"><span class="toc-number">6.1.</span> <span class="toc-text">day0</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#day1"><span class="toc-number">6.2.</span> <span class="toc-text">day1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#day2"><span class="toc-number">6.3.</span> <span class="toc-text">day2</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#day3"><span class="toc-number">6.4.</span> <span class="toc-text">day3</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E6%80%BB%E7%BB%93"><span class="toc-number">7.</span> <span class="toc-text">6.总结</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%AF%B9%E8%B5%9B%E9%A2%98%E7%9A%84%E6%80%BB%E7%BB%93"><span class="toc-number">7.1.</span> <span class="toc-text">1.对赛题的总结</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%AF%B9%E5%86%B3%E8%B5%9B%E8%A1%8C%E7%A8%8B%E7%9A%84%E6%80%BB%E7%BB%93"><span class="toc-number">7.2.</span> <span class="toc-text">2.对决赛行程的总结</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%AF%B9%E8%87%AA%E8%BA%AB%E6%AF%94%E8%B5%9B%E8%BF%87%E7%A8%8B%E7%9A%84%E6%80%BB%E7%BB%93"><span class="toc-number">7.3.</span> <span class="toc-text">3.对自身比赛过程的总结</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%AF%B9AI%E7%9A%84%E6%80%BB%E7%BB%93"><span class="toc-number">7.4.</span> <span class="toc-text">4.对AI的总结</span></a></li></ol></li></ol>
+</div>
+</div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img data-src="/avatar/avatar.jpg" data-sizes="auto" alt="Sanae" class="lazyload">
+  <div class="sidebar-author-name">Sanae</div>
+  <div class="sidebar-description"></div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div>
+    <div class="sidebar-state-number">9</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>分类</div>
+    <div class="sidebar-state-number">0</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>标签</div>
+    <div class="sidebar-state-number">1</div>
+  </div>
+</div>
+<div class="sidebar-social" >
+</div>
+<div class="sidebar-menu">
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/" aria-label="首页"></a>
+          <div class="sidebar-menu-icon icon rotate">
+              &#xe62b;
+          </div>
+        <div class="sidebar-menu-link">首页</div>
+      </div>
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/archives" aria-label="归档"></a>
+          <div class="sidebar-menu-icon icon rotate">
+              &#xe62b;
+          </div>
+        <div class="sidebar-menu-link">归档</div>
+      </div>
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/about" aria-label="关于"></a>
+          <div class="sidebar-menu-icon icon rotate">
+              &#xe62b;
+          </div>
+        <div class="sidebar-menu-link">关于</div>
+      </div>
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友链"></a>
+          <div class="sidebar-menu-icon icon rotate">
+              &#xe62b;
+          </div>
+        <div class="sidebar-menu-link">友链</div>
+      </div>
+</div>
+</div>
+          <div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div>
+    </div>
+  </div>
+  <div class="sidebar-widget">
+  </div>
+  </div>
+</aside>
+
+          <section id="main" aria-label="Main content"><article id="post-华为软件精英挑战赛" class="h-entry article" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-inner" data-aos="fade-up">
+    <div class="article-meta">
+      <div class="article-date">
+  <span class="article-date-link icon-calendar" data-aos="zoom-in">
+    <time datetime="2026-05-18T11:25:31.196Z" itemprop="datePublished">2026-05-18</time>
+    <time style="display: none;" id="post-update-time">2026-09-01</time>
+  </span>
+</div>
+
+    </div>
+    
+    <div class="hr-line"></div>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+        <h2 id="0-前言"><a href="#0-前言" class="headerlink" title="0.前言"></a>0.前言</h2><p>打这个比赛纯纯是打着玩，想拿华为手环，之前也听说过这个比赛，看过B站的一些视频，感觉赛题还是比较有意思，不是那种传统OI，ACM那些题目，所以就报名了。还有个想法就是测试一下agent到底什么水平，于是乎报名参赛。</p>
+<h2 id="1-比赛流程"><a href="#1-比赛流程" class="headerlink" title="1.比赛流程"></a>1.比赛流程</h2><p>整个比赛的周期还是比较长的，接近两个月吧，虽然有点我做题都有点断断续续，并且全程都是AI。<br>整个过程有初赛、复赛、决赛，每个又有训练赛和正式赛，题目在训练赛与正式赛期间都可能会稍作改动。初赛复赛决赛的题目也改动很大。但总体还是一类问题。训练赛的数据比较水，正式赛的数据会上强度，并且有那种极其刁钻的，确实恶心。<br>正式赛的时间一般都会比较紧张，在限定的时间改代码。<br>这次整个题目可能都是有点问题，参赛选手意见不小。</p>
+<h2 id="2-初赛"><a href="#2-初赛" class="headerlink" title="2.初赛"></a>2.初赛</h2><p>首先是初赛训练赛，有个神秘小数字328800，卡了比较久的时间，主要是评分会有<strong>正确分和效率分</strong>，当时没想到效率要求这么高，以为是某些数据还不对，所以卡了很久，后面让AI狠狠优化速度，结果就提分提了上去最高到了34w出头，而且评测机抖动问题严重，初赛训练赛期间分差能到1w左右，也很夸张。<br>然后是正式赛，正式赛还是有两天多的时间去做，一开始训练赛的代码效果很烂，让AI优化好久都不成功，后面直接让他重做到了54w，有点感觉了，发现这种东西不如<strong>让AI全部重做</strong>。然后后面优化54w发现也没啥效果，于是直接让他继续重做，达到58w。后面又让他继续重做，发现卡到了50+w分数。由于初赛已经有点经验了，这题目效率分其实比较重要，这时候我改了一下我的提示词，主要目的就是让AI疯狂优化效率，结果一下干到了85w左右，后面简单优化了一下最终定格在87w分。顺利进入复赛。</p>
+<h2 id="3-复赛"><a href="#3-复赛" class="headerlink" title="3.复赛"></a>3.复赛</h2><p>这个时候已经保底华为手环了，也无所谓了。复赛练习赛把初赛的东西交上去，发现22w左右。继续优化了一下也就25w左右。之后就没管了<br>后面快开赛了再重新做了一下。也是让AI重做了一下。得到了26w分左右，但其实大伙得分相差很低，我这个都能到西北赛区第一页。<br>正式赛有视频会议，比赛时间只有三个小时。当时其实把练习赛的东西一交上去就差不多55w了，后面可能也让AI重新做，也让AI优化原本的，反正都没啥效果。唐小天他们考虑到了一些特殊数据特殊情况，得到了70+w分，断档领先，最后<strong>靠抖动给我抖出来一个近59w，到第四了</strong>。我都没想到</p>
+<h2 id="4-决赛"><a href="#4-决赛" class="headerlink" title="4.决赛"></a>4.决赛</h2><p>决赛的赛题变化还挺大，总结来说就是评分规则变：效率分没了，多边形个数变多，移动有了边界限制。<br>不过我还是一样用AI做题，复赛的东西我个人感觉很难沿用，就直接让他做新的了，结果效果很不好，然后还用小米的AI，其实感觉也一般。<br>不知道什么情况反正最后涨分很困难，我感觉正确率有很大问题。<br>最后几天的时候，由于西安华为有个会，在车上我听到了唐小天他们的一些交流，他们比较关注于特殊数据，但是我通常还是在想一些比较通用的解法。这倒是提醒了我，我后续那几天让AI多造一些特殊数据，勉强到了10w分。问题还是在于，AI造数据的能力有点烂，说实话，不够极端。</p>
+<h2 id="5-决赛正式赛"><a href="#5-决赛正式赛" class="headerlink" title="5.决赛正式赛"></a>5.决赛正式赛</h2><h3 id="day0"><a href="#day0" class="headerlink" title="day0"></a>day0</h3><p>又跟唐小天他们聊了一下，他们确实牛批啊，熬夜优化啥的干了好久，但是我就比较摆，感觉有点德不配位吧，进决赛也没敢跟他们交流说太多。<br>不过我倒是受到了一点启发，我其实也没有去研究比赛的数据到底是怎么样的。其实可以通过一些特殊方法把数据的大体情况整出来。于是乎晚上又整了一下，不过感觉没啥卵用就早早睡了，其实睡得也不算早，估计2点才睡。<br>行程上大概就是去机场深圳然后去东莞松山湖住酒店，晚上吃的很简陋。我是真没绷住。然后还有尴尬宣传片，<strong>我那唐比咕咕嘎嘎队名和稳稳接住的逆天口号只能说唐完了</strong>。  </p>
+<h3 id="day1"><a href="#day1" class="headerlink" title="day1"></a>day1</h3><p>第二天早上6：30起的，睡得也不好，难受死了。去场馆又各种摄影宣传啥的，没啥意思，还挺浪费时间。比赛9点开始，一直到12点。<br>赛前有专家讲解决赛题目，最关键是告诉我们数据集和决赛题目的变化，最大的变化在于边界变成了多边形，看了看部分数据形状，只能说真的变态。对于有些数据，我感觉算法根本连解都找不到，更别说还要最优了。<br>由于要改输入输出，我就三线程了，一个跑claude+dsv4，之前用过flash，用很简洁的代码训练赛跑了近10w分，感觉有点搞头。第二个优化训练赛的10w分代码，第三个就让AI直接重新做了。结果重做的第一版能跑到9w分，优化的那一版也能跑9w，就是ds那版有点垃圾，于是后续不管了。最后还是让AI自己优化啥的，但是都没什么吊用，也就11w+。排名也很低就是了。<br>唐小天他们也挺惨，锅炉房他们也差点拿钱，就打老虎他们拿钱了。<br>然后就是逛溪村了，说实话，有点无聊，而且热得要命，在那一直走，五点左右一群人玩游戏领奖品啥的，说实话奖品有点拉。然后就吃饭。对我来说纯折磨。<br>晚上在那聊天，聊的基本都是AI吧，其实我会感觉，大家对于AI的实力还是有点低估，很多地方AI其实能够做的比较好了。</p>
+<h3 id="day2"><a href="#day2" class="headerlink" title="day2"></a>day2</h3><p>去深圳坂田基地，先听汇报，一个是code agent，一个是天筹求解器，感觉那个天筹求解器还挺有意思的，跟这次赛题也是强相关，不过最后那个小组讨论汇报真的是唐完了，不像人，问题就是经典AI到底能不能取代人类专家。感觉回答也比较公式吧，但是其实我感觉回答的点来说，感觉大部分人对AI了解还是比较片面，有点低估AI当前的水平了。不过有些确实还是目前AI的难点。后续我也会说出我的看法。<br>然后颁奖，首先开场华为员工跳pop&#x2F;star，然后颁最优美代码奖，最佳智能体应用，软件开发过程。沟槽的两对情侣好像，难评。第一光子世界居然还是用的云码道，不知道真的假的。<br>然后打老虎他们得了亚军有10w，有个南大实验室单排选手拿了5w，看了看他们lab，也是这种优化问题的。算是强相关。<br>冠军光子世界，博士生，说是最关键的在于一开始复现那篇论文，那很会搞科研了。<br>中午吃华为食堂，感觉一般。<br>下午去那个普朗克展厅，我日这是真折磨，整个展厅虽然大，但是10分钟参观得差不多了，然后没几个坐的位置，一直站着难受死了。<br>下午说是要去哪个景区，因为天气原因取消，早早回到酒店。本来应该去逛点二次元商圈的，但是我给忘了。<br>晚宴感觉还行，但是团建小游戏有点唐了。这时候本来还有机会，但是我回房间打游戏去了。<br>结果这一天就草草过去了。</p>
+<h3 id="day3"><a href="#day3" class="headerlink" title="day3"></a>day3</h3><p>回西安</p>
+<h2 id="6-总结"><a href="#6-总结" class="headerlink" title="6.总结"></a>6.总结</h2><h3 id="1-对赛题的总结"><a href="#1-对赛题的总结" class="headerlink" title="1.对赛题的总结"></a>1.对赛题的总结</h3><p>赛题，平台，确实也存在各种各样的问题，今年的题目确实差点意思。<br>不过之前都是AI做，对题目也没啥自己的理解。决赛对这类NP组合优化问题有点更深的了解了。</p>
+<h3 id="2-对决赛行程的总结"><a href="#2-对决赛行程的总结" class="headerlink" title="2.对决赛行程的总结"></a>2.对决赛行程的总结</h3><p>纯纯依托，除了自己不花钱，加上赛区带队的两位员工还挺好的，总决赛行程真的烂。听唐小天说对比去年纯纯降档。如果没有拿钱的希望跑过去玩的话，可能是纯折磨，一天到晚真的挺累的。如果喜欢交朋友聊天啥的，有意愿通过比赛直接入职啥的，那确实也有点用。</p>
+<h3 id="3-对自身比赛过程的总结"><a href="#3-对自身比赛过程的总结" class="headerlink" title="3.对自身比赛过程的总结"></a>3.对自身比赛过程的总结</h3><p>运气比较好了，相比于其他队熬夜做题，我没投入太多精力，最多投了一些token钱，就进了决赛。<br>自身对AI有点过度依赖了，以至于没有思考、检索任何可能用到的算法。<br>虽然有一些OI的经验，但是这次比赛总想着靠AI直接做，就没用啥技巧分析啥的，因为有评测机，完全可以来测测线上数据以更好优化。<br>不过以我的情况完全可以反映出当前codex的真实水平了吧，毕竟99%都是AI做的。<strong>目前的agent已经达到了擦边总决赛的水平，在开发时间以及人力消耗上领先很大</strong>。</p>
+<h3 id="4-对AI的总结"><a href="#4-对AI的总结" class="headerlink" title="4.对AI的总结"></a>4.对AI的总结</h3><p>在线下决赛之前，我一直觉得AI真是无敌的，纯靠AI都能达到不错的效果。实际上AI确实可以在非常短的时间内达到一个比较好的一个效果，但是你如果要做到极限，AI优化不出来。要么你就各种抽卡，撞大运说不定能撞出来。<br>决赛的冠亚军队伍，他们都有借助一些自己的思考，也有参考一些文献。对于前沿的内容，AI使用的概率是极低的，因为根本没有应用案例，甚至对于这些内容他们压根不知道，还得你输入进去。<br>于是乎，AI确实应该当作一个干活的人，如果真的是全权让AI做，对于一些追求极限或者是追求前沿的事，是干不好的。<br>在AI的帮助下，你可以迅速实现你的思路，验证你的想法，很多idea都能迅速实现，因此优化的速度会提升很多。这是这届软挑相比之前的很大一个区别。<br>还有就是经典的AI对于复杂工程，无论是软硬机实物还是企业级项目，AI一般来说都是吃不消的。所以说这个也算是没那么容易被取代？毕竟你企业的项目都是几百万，千万行代码的级别？我感觉上下文和注意力目前还没那么好攻克，但是为什么要攻克呢？人类开发也不可能这么多行代码全部读。对于实物，就算再怎么垃圾，包装一下总还是有用的，AI这方面也比较难代替。现实性的东西靠空谈还是不太行，最多指导一下。<br>在AI时代，我觉得只有一直在一个比较前沿的方向，才不会被淘汰。传统纯软开发确实没啥前途了。</p>
+
+    </div>
+    <footer class="article-footer">
+      
+      
+    </footer>
+  </div>
+    <nav id="article-nav" aria-label="Article navigation" data-aos="fade-up">
+      <div class="article-nav-link-wrap left">
+            <img data-src="/covers/bg5.webp" data-sizes="auto" alt="电赛总结" class="lazyload">
+        <a href="/2026/08/02/%E7%94%B5%E8%B5%9B%E6%80%BB%E7%BB%93/" aria-label="前一篇: 电赛总结" title="前一篇: 电赛总结"></a>
+        <div class="article-nav-caption">前一篇</div>
+        <h3 class="article-nav-title">
+            电赛总结
+        </h3>
+      </div>
+    <div class="article-nav-link-wrap right">
+          <img data-src="/covers/bg1.webp" data-sizes="auto" alt="大三下两三事" class="lazyload">
+      <a href="/2026/03/04/%E5%A4%A7%E4%B8%89%E4%B8%8B%E4%B8%A4%E4%B8%89%E4%BA%8B/" aria-label="后一篇: 大三下两三事"  title="后一篇: 大三下两三事"></a>
+      <div class="article-nav-caption">后一篇</div>
+      <h3 class="article-nav-title">
+          大三下两三事
+      </h3>
+    </div>
+  </nav>
+
+</article>
+
+
+</section>
+        </div>
+        <footer id="footer" aria-label="Site footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info">
+    <div>
+      <span class="icon-copyright"></span>
+        2020-2026
+        <span class="footer-info-sep rotate"></span>
+      Sanae
+    </div>
+      <div>
+        基于&nbsp;<a href="https://hexo.io/" rel="noopener nofollow noreferrer" target="_blank">Hexo</a>&nbsp;
+        Theme.<a href="https://github.com/D-Sketon/hexo-theme-reimu" rel="noopener nofollow noreferrer" target="_blank">Reimu</a>
+      </div>
+      <div>
+        <span class="icon-brush"></span>
+        22.6k
+        &nbsp;|&nbsp;
+        <span class="icon-coffee"></span>
+        01:33
+      </div>
+      <div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv">总访问量&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv">总访客量&nbsp;<span id="busuanzi_value_site_uv"></span></span>
+      </div>
+  </div>
+</footer>
+
+          <div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div>
+        <div id="mask" class="hide"></div>
+      </div>
+      <nav id="mobile-nav" aria-label="Mobile navigation">
+  <div class="sidebar-wrap">
+        <div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
+<div class="sidebar-toc-wrapper toc-div-class" >
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#0-%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">0.前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E6%AF%94%E8%B5%9B%E6%B5%81%E7%A8%8B"><span class="toc-number">2.</span> <span class="toc-text">1.比赛流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%88%9D%E8%B5%9B"><span class="toc-number">3.</span> <span class="toc-text">2.初赛</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%A4%8D%E8%B5%9B"><span class="toc-number">4.</span> <span class="toc-text">3.复赛</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%86%B3%E8%B5%9B"><span class="toc-number">5.</span> <span class="toc-text">4.决赛</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E5%86%B3%E8%B5%9B%E6%AD%A3%E5%BC%8F%E8%B5%9B"><span class="toc-number">6.</span> <span class="toc-text">5.决赛正式赛</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#day0"><span class="toc-number">6.1.</span> <span class="toc-text">day0</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#day1"><span class="toc-number">6.2.</span> <span class="toc-text">day1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#day2"><span class="toc-number">6.3.</span> <span class="toc-text">day2</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#day3"><span class="toc-number">6.4.</span> <span class="toc-text">day3</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E6%80%BB%E7%BB%93"><span class="toc-number">7.</span> <span class="toc-text">6.总结</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%AF%B9%E8%B5%9B%E9%A2%98%E7%9A%84%E6%80%BB%E7%BB%93"><span class="toc-number">7.1.</span> <span class="toc-text">1.对赛题的总结</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%AF%B9%E5%86%B3%E8%B5%9B%E8%A1%8C%E7%A8%8B%E7%9A%84%E6%80%BB%E7%BB%93"><span class="toc-number">7.2.</span> <span class="toc-text">2.对决赛行程的总结</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%AF%B9%E8%87%AA%E8%BA%AB%E6%AF%94%E8%B5%9B%E8%BF%87%E7%A8%8B%E7%9A%84%E6%80%BB%E7%BB%93"><span class="toc-number">7.3.</span> <span class="toc-text">3.对自身比赛过程的总结</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%AF%B9AI%E7%9A%84%E6%80%BB%E7%BB%93"><span class="toc-number">7.4.</span> <span class="toc-text">4.对AI的总结</span></a></li></ol></li></ol>
+</div>
+</div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img data-src="/avatar/avatar.jpg" data-sizes="auto" alt="Sanae" class="lazyload">
+  <div class="sidebar-author-name">Sanae</div>
+  <div class="sidebar-description"></div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div>
+    <div class="sidebar-state-number">9</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>分类</div>
+    <div class="sidebar-state-number">0</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>标签</div>
+    <div class="sidebar-state-number">1</div>
+  </div>
+</div>
+<div class="sidebar-social" >
+</div>
+<div class="sidebar-menu">
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/" aria-label="首页"></a>
+          <div class="sidebar-menu-icon icon rotate">
+              &#xe62b;
+          </div>
+        <div class="sidebar-menu-link">首页</div>
+      </div>
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/archives" aria-label="归档"></a>
+          <div class="sidebar-menu-icon icon rotate">
+              &#xe62b;
+          </div>
+        <div class="sidebar-menu-link">归档</div>
+      </div>
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/about" aria-label="关于"></a>
+          <div class="sidebar-menu-icon icon rotate">
+              &#xe62b;
+          </div>
+        <div class="sidebar-menu-link">关于</div>
+      </div>
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友链"></a>
+          <div class="sidebar-menu-icon icon rotate">
+              &#xe62b;
+          </div>
+        <div class="sidebar-menu-link">友链</div>
+      </div>
+</div>
+</div>
+  </div>
+      <div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div>
+</nav>
+
+    </div>
+    
+<script src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js" integrity="sha384-3gT&#x2F;vsepWkfz&#x2F;ff7PpWNUeMzeWoH3cDhm&#x2F;A8jM7ouoAK0&#x2F;fP&#x2F;9bcHHR5kHq2nf+e" crossorigin="anonymous"></script>
+
+
+<script src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js" integrity="sha384-J08i8An&#x2F;QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+  
+<script src="/js/aos.js"></script>
+
+  <script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', aosInit);
+    } else {
+      aosInit();
+    }
+  </script>
+
+
+<script src="/js/pjax_script.js" data-pjax></script>
+
+
+
+
+  <script>
+    var setupFirework = () => {
+      if (!false || !window.matchMedia('(max-width: 768px)').matches) {
+        window.firework && window.firework(JSON.parse('{"excludeElements":["a","button"],"particles":[{"shape":"circle","move":["emit"],"easing":"easeOutExpo","colors":["var(--red-1)","var(--red-2)","var(--red-3)","var(--red-4)"],"number":20,"duration":[1200,1800],"shapeOptions":{"radius":[16,32],"alpha":[0.3,0.5]}},{"shape":"circle","move":["diffuse"],"easing":"easeOutExpo","colors":["var(--red-0)"],"number":1,"duration":[1200,1800],"shapeOptions":{"radius":20,"alpha":[0.2,0.5],"lineWidth":6}}]}'));
+      }
+    }
+  </script>
+  
+<script src="https://npm.webcache.cn/mouse-firework@0.2.0/dist/index.umd.js" integrity="sha384-qi9WggRt19tv8Vc7pCHW3ulMNLwrn515zaLEWZjl1px07vz8+pUoWX8n1rgq282T" crossorigin="anonymous" onload="setupFirework()" defer></script>
+
+
+
+
+
+
+<div id="lazy-script">
+  <div>
+      
+      
+      <script data-pjax>
+        window.REIMU_POST = {
+          author: "Sanae",
+          title: "华为软件精英挑战赛过程总结",
+          url: "https://sanae1116.github.io/2026/05/18/%E5%8D%8E%E4%B8%BA%E8%BD%AF%E4%BB%B6%E7%B2%BE%E8%8B%B1%E6%8C%91%E6%88%98%E8%B5%9B/",
+          excerpt: "",
+          description: "",
+          stripContent: "0.前言打这个比赛纯纯是打着玩，想拿华为手环，之前也听说过这个比赛，看过B站的一些视频，感觉赛题还是比较有意思，不是那种传统OI，ACM那些题目，所以就报名了。还有个想法就是测试一下agent到底什么水平，于是乎报名参赛。 1.比赛流程整个比赛的周期还是比较长的，接近两个月吧，虽然有点我做题都有点断断续续，并且全程都是AI。整个过程有初赛、复赛、决赛，每个又有训练赛和正式赛，题目在训练赛与正式赛期间都可能会稍作改动。初赛复赛决赛的题目也改动很大。但总体还是一类问题。训练赛的数据比较水，正式赛的数",
+          date: "Mon May 18 2026 19:25:31 GMT+0800",
+          updated: "Tue Sep 01 2026 11:18:52 GMT+0800",
+          cover: "/images/bg1.webp",
+        };
+      </script>
+        
+<script src="/js/insert_highlight.js" data-pjax></script>
+
+      
+<script src="/js/tabs.js" data-pjax defer></script>
+
+      <script type="module" data-pjax>
+        (async () => {
+          const PhotoSwipeLightbox = (await safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js", "sha384-DiL6M/gG+wmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF/N6lrZi/")).default;
+          const initPswp = (gallery, children) => {
+            if (_$$(`${gallery} ${children}`).length > 0) {
+              new PhotoSwipeLightbox({
+                gallery,
+                children,
+                pswpModule: () => safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s")
+              }).init();
+            }
+          }
+          const pswp = () => {
+            initPswp('.article-entry', 'a.article-gallery-item');
+            initPswp('.article-gallery', 'a.article-gallery-item');
+          }
+          pswp();
+        })();
+      </script>
+        
+
+
+  </div>
+</div>
+
+
+  <script>
+    console.log(String.raw`%c 
+ ______     ______     __     __    __     __  __    
+/\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+\ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+ \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+  \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                  
+`,'color: #ff5252;')
+    console.log('%c Theme.Reimu v' + '1.11.2' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
+  </script>
+  
+
+
+  
+<script src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js" integrity="sha384-0M75wtSkhjIInv4coYlaJU83+OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id+S" crossorigin="anonymous" async></script>
+
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then((registrations) => {
+      for (let registration of registrations) {
+        registration.unregister();
+      }
+    });
+  }
+</script>
+
+
+
+
+  </body>
+  </html>
